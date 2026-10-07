@@ -13,7 +13,8 @@
 
 ```powershell
 # Grayscale 변환
-.\x64\Release\ImageProcessor.exe --input .\Resource\1_astronaut.bmp --output .\Resource\1_astronaut_grayscale.bmp --filter grayscale
+
+./ImageProcessor.exe --input 3_chelsea_cat.bmp --output grayscale.bmp --filter grayscale
 ```
 
 ```powershell
