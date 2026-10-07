@@ -2,10 +2,11 @@
 
 ## 구현 항목
 
-- 
-- 
-- 
-- 
+- grayscale
+- blur
+- bright / contrast
+- horizontal / vertical
+- threshold
 
 ## 실행 명령어 (예시)
 
