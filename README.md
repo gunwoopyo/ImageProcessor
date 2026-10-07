@@ -3,10 +3,10 @@
 ## 구현 항목
 
 - grayscale
-- blur
+- blur + threshold
 - bright / contrast
 - horizontal / vertical
-- threshold
+
 
 ## 실행 명령어 (예시)
 
@@ -19,11 +19,31 @@
 ```
 
 ```powershell
-# Blur 처리 + 임계값 지정
-.\x64\Release\ImageProcessor.exe --input .\Resource\2_coffee.bmp --output .\Resource\2_coffee_blur_threshold.bmp --filter blur --threshold 128
+# Blur 처리 + 임계값 흑백처리
+./ImageProcessor.exe --input 1_astronaut.bmp --output blurThreshold.bmp --filter blur --threshold 100
 ```
 
 ```powershell
-# 필터 파이프라인 체인(고급)
-.\x64\Release\ImageProcessor.exe --input .\Resource\3_chelsea_cat.bmp --output .\Resource\3_chelsea_cat_pipeline.bmp --pipeline "grayscale, blur, threshold:128"
+# 밝기 조절
+./ImageProcessor.exe --input 3_chelsea_cat.bmp --output bright.bmp --filter bright 50
 ```
+
+```powershell
+# 대비 조절 
+./ImageProcessor.exe --input 5_checkerboard.bmp --output contrast.bmp --filter contrast 50
+
+```
+
+```powershell
+# 상하 반전
+./ImageProcessor.exe --input 1_astronaut.bmp --output vertical.bmp --filter vertical
+```
+```powershell
+# 좌우 반전
+./ImageProcessor.exe --input 2_coffee.bmp --output horizontal.bmp --filter horizontal
+```
+
+
+
+
+
