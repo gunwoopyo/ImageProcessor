@@ -26,3 +26,5 @@ C++ 기반의 CLI 이미지 처리 프로그램 과제입니다.
 ./ImageProcessor.exe --input input.bmp --output result.bmp --filter vertical
 ./ImageProcessor.exe --input input.bmp --output result.bmp --filter blur --threshold 100
 
+
+감사합니다.
