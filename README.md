@@ -21,7 +21,8 @@ BMP 이미지를 입력받아 다양한 이미지 처리 알고리즘을 적용�
 - Brightness / Contrast
 - horizontal / vertical
 - threshold
-
+- 
+```text
 ## 실행 방법
 
 ./ImageProcessor.exe --input input.bmp --output result.bmp --filter grayscale
@@ -31,3 +32,4 @@ BMP 이미지를 입력받아 다양한 이미지 처리 알고리즘을 적용�
 ./ImageProcessor.exe --input input.bmp --output result.bmp --filter horizontal
 ./ImageProcessor.exe --input input.bmp --output result.bmp --filter vertical
 ./ImageProcessor.exe --input input.bmp --output result.bmp --filter blur --threshold 100
+...
